@@ -13,6 +13,7 @@ suckless="$HOME/j3ll0/.suckless/"
 declare -A friendly_names=(
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Downloads/"]="Downloads"
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/dwhelper/"]="DW Helper Downloads"
+    ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/ROFI/"]="ROFI Video Downloads"
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Torrents/Complete/"]="Torrent Complete"
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Torrents/InComplete/"]="Torrent InComplete"
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/AUR/"]="AUR Downloads"
@@ -42,6 +43,7 @@ menu() {
     cat <<EOF
 📥  DOWNLOADS
 📥  DW Helper Downloads
+📥  ROFI Video Downloads
 📥  Torrent Complete
 📥  Torrent InComplete
 📥  AUR Downloads
@@ -75,6 +77,7 @@ main() {
     case "$choice" in
         "📥  DOWNLOADS") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Downloads/ ;;
         "📥  DW Helper Downloads") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/dwhelper/ ;;
+        "📥  ROFI Video Downloads") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/ROFI/ ;;
         "📥  Torrent Complete") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Torrents/Complete/ ;;
         "📥  Torrent InComplete") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Torrents/InComplete/ ;;
         "📥  AUR Downloads") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/AUR/ ;;

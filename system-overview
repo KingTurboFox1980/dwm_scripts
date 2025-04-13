@@ -1,0 +1,97 @@
+conky.config = {
+    background = true,
+    update_interval = 5,
+    total_run_times = 0,
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_argb_visual = true,
+    own_window_argb_value = 150, -- adjust transparency
+    own_window_transparent = false,
+    double_buffer = true,
+    minimum_width = 260,
+    minimum_height = 200,
+    alignment = 'top_right',
+    gap_x = -350,
+    gap_y = 50,
+    use_xft = true,
+    xftalpha = 1,
+    font = 'Inter:size=15',
+    default_color = 'white',
+    draw_shades = true,
+    
+    -- Colours
+
+    default_color = '#ff0000',                    -- default color and border color
+    color2 = '#9580ff',
+    color1 = '#6272a4',
+    color3 = '#8be9fd',
+    color4 = '#ffff80',
+    color5 = '#50fa7b',
+    color6 = '#aa0000',
+
+    -- Signal Colours
+    color9 = '#1F7411',                        -- green
+    color8 = '#FFA726',                        -- orange
+    color7 = '#F1544B',                        -- firebrick
+};
+
+conky.text = [[
+${font DejaVu Sans Mono:size=9}${color7}(S) + SHIFT + R${alignr}${color7}RECOMPILE${color}
+${color}${color7}ALT + CTRL + BACKSPACE${alignr}${color7}EXIT${color}
+${color7}MIC MUTE${alignr}${color7}Pywal Wallpaper${color}
+${color7}ROG KEY${alignr}${color7}PLACES${color}
+${color}${color7}Numpad *${alignr}${color7}Xmonad Hints${color}
+${color}${color7}(S) + Numpad *${alignr}${color7}Arco Hints${color}
+${color}${color7}Shift + Numpad *${alignr}${color7}VIM Hints${color}
+${color7}F6${alignr}${color7}Screen(s) Off${color}
+${color7}FN + F7${alignr}${color7}Brightness DOWN${color}
+${color7}FN + F8${alignr}${color7}Brightness UP${color}
+${color7}ALT + N / P${alignr}${color7}Wallpaper Next / Previous${color}
+${color1}${hr}${color}
+${color5}Numpad /${alignr}${color2}Reload Bars${color}
+${color5}(S) SHIFT + F${alignr}${color2}Full Screen / Show Bars${color}
+${color5}(S) + F | F10${alignr}${color2}Full Screen / Hide Bars${color}
+${color1}${hr}${color}
+${color4}Numpad .${alignr}${color2}Reset Stack${color}
+${color4}(S) + SPACE${alignr}${color2}Switch Screen Layout${color}
+${color4}SHIFT + CTRL + Up / Down${alignr}${color2}Rotate Stack${color}
+${color4}SHIFT + CTRL + Left / Right${alignr}${color2}Shrink / Expand${color}
+${color4}(S) CTRL + Left / Right${alignr}${color2}Add / Remove Master${color}
+${color4}(S) SHIFT + Left / Right${alignr}${color2}Move App To Monitor${color}
+${color4}ALT + CTRL + Left / Right${alignr}${color2}Switch Workspace${color}
+${color1}${hr}${color}
+${color7}(S) + A${alignr}${color2}Apple Music${color}
+${color7}(S) + C${alignr}${color2}Code${color}
+${color7}(S) + E${alignr}${color2}Evolution${color}
+${color7}(S) + O${alignr}${color2}One Note${color}
+${color7}(S) + T${alignr}${color2}File Manager${color}
+${color7}(S) + V${alignr}${color2}Volume Settings${color}
+${color7}(S) + W${alignr}${color2}Floorp Browser${color}
+${color1}${hr}${color}
+${color8}CTRL + ALT + A${alignr}${color2}Finder${color}
+${color8}(S) + SHIFT + D${alignr}${color2}D-Menu${color}
+${color8}(S) + D${alignr}${color2}ROFI (B)${color}
+${color8}(S) + Z${alignr}${color2}ROFI (S)${color}
+${color8}CTRL + ALT + R${alignr}${color2}ROFI Theme${color}
+${color8}F12${alignr}${color2}Scratchpad${color}
+${color8}F9${alignr}${color2}Monitor Warmth${color}
+${color8}ALT + N / P | Numpad *${alignr}${color2}Pywal Change Wallpaper${color}
+${color1}${hr}${color}
+${color1}(S) + S${alignr}${color2}D-Menu Web-Search${color}
+${color1}Numpad -${alignr}${color2}Xmonad D-Menu${color}
+${color1}Numpad +${alignr}${color2}Maintenance${color}
+${color1}(S) + Numpad +${alignr}${color2}Auto Maintenance${color}
+${color1}CTRL + ALT + E${alignr}${color2}Linux Tweak Tool${color}
+${color1}CTRL + ALT + O${alignr}${color2}Picom Toggle${color}
+${color1}${hr}${color}
+${color5}I | R | Esc${alignr}${color2}Insert | Replace | Escape${color}
+${color5}:w | :wq | :q!${alignr}${color2}Write | Write/Quit | Quit NO Write${color}
+${color5}cw${alignr}${color2}Delete Word and Insert${color}
+${color5}dd | dw | x${alignr}${color2}Delete line | Word | Char${color}
+${color5}:%d${alignr}${color2}Delete All${color}
+${color5}b | e${alignr}${color2}Begining | End Of Word${color}
+${color5}/ n | N${alignr}${color2}Search Next | Previous${color}
+${color5}yy${alignr}${color2}Copy${color}
+${color5}P | p${alignr}${color2}Paste Above | Below${color}
+${color5}u | U${alignr}${color2}Undo | Redo${color}
+]]

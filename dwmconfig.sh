@@ -22,7 +22,7 @@ PACMAN CONFIG (SUDO)
 PARU CONFIG (SUDO)
 PICOM
 Polybar Bookmarks
-Polybar Search Engines
+D-Menu Search Engines
 STARSHIP TOML
 VIM Keyhints
 DWM Keyhints
@@ -43,8 +43,8 @@ main() {
         "PACMAN CONFIG (SUDO)") exec kitty -e sudo vim /etc/pacman.conf ;;
         "PARU CONFIG (SUDO)") exec kitty -e sudo vim /etc/paru.conf ;;
         "PICOM") exec kitty -e sudo vim /etc/xdg/picom.conf ;;
-        "Polybar Bookmarks") file="/home/j3ll0/.config/polybar/scripts/bm.sh" ;;
-        "Polybar Search Engines") file="/home/j3ll0/.config/scripts/dmenu-websearch_engines.sh" ;;
+        "Polybar Bookmarks") file="/home/j3ll0/.config/scripts/dmenu_bookmarks.txt" ;;
+        "D-Menu Search Engines") file="/home/j3ll0/.config/scripts/dmenu-websearch.sh" ;;
         "STARSHIP TOML") file="/home/j3ll0/.config/starship.toml" ;;
         "VIM Keyhints") file="/home/j3ll0/.config/polybar/scripts/keyhintvim.sh" ;;
         "DWM Keyhints") file="/home/j3ll0/.config/polybar/scripts/keyhintdwm.sh" ;;

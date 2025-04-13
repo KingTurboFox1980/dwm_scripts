@@ -46,16 +46,16 @@ num_notifications=$($SCRIPTS_DIR/count_notifications.sh)
 OPTIONS=$(cat <<EOF
 $status$snooze_timer ($num_notifications) ( + N)
 ⏰ SNOOZE NOTIFICATIONS
-📂 FAV PLACES (MIC MUTE)
-🔎 WEB SEARCH ( + S)
+📂 FAV PLACES (ROG KEY)
+🔎 WEB SEARCH (  + S)
 🔗 WEB FAVS
 🗓️ CALENDAR
 🌂 WEATHER
 💡 DWM KEYHINTS (F5)
 💡 VIM KEYHINTS (SHIFT + F5)
-🛠️ MAINTENANCE (SHIFT + ROG)
-📊 SYSTEM MONITOR ( + ESCAPE)
-🔌 POWER OPTIONS ( + X)
+🛠️ MAINTENANCE (Numpad +)
+📊 MISSION CENTER (  + ESCAPE)
+🔌 POWER OPTIONS (  + X)
 💻 REDSHIFT (SHIFT + F9)
 💻 PICOM TOGGLE
 🐧 RECOMPILE (  + SHIFT + R)
@@ -79,7 +79,7 @@ case $CHOICE in
     "  ACTIVE"*)
         $SCRIPTS_DIR/pause_dunst.sh
         ;;
-    "📂 FAV PLACES (MIC MUTE)")
+    "📂 FAV PLACES (ROG KEY)")
         $SCRIPTS_DIR/dwmfolders.sh
         ;;
     "📢 MANAGE NOTIFICATIONS")
@@ -97,20 +97,20 @@ case $CHOICE in
     "💡 VIM KEYHINTS (SHIFT + F5)")
         /home/j3ll0/.config/polybar/scripts/keyhintvim.sh
         ;;
-    "🛠️ MAINTENANCE (SHIFT + ROG)")
+    "🛠️ MAINTENANCE (Numpad +)")
         /home/j3ll0/.config/scripts/maintenance.sh
         ;;
-    "🔌 POWER OPTIONS ( + X)")
+    "🔌 POWER OPTIONS (  + X)")
         $SCRIPTS_DIR/powermenu/powermenu.sh
         ;;
-    "🔎 WEB SEARCH ( + S)")
+    "🔎 WEB SEARCH (  + S)")
         $SCRIPTS_DIR/dmenu-websearch.sh
         ;;
     "🔗 WEB FAVS")
         $SCRIPTS_DIR/dmenu-bookmark.sh
         ;;
-    "📊 SYSTEM MONITOR ( + ESCAPE)")
-        exec neohtop
+    "📊 MISSION CENTER (  + ESCAPE)")
+        exec missioncenter
         ;;
     "💻 REDSHIFT (SHIFT + F9)")
         /home/j3ll0/.config/scripts/redshift.sh
