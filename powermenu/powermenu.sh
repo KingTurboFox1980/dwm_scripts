@@ -14,7 +14,7 @@
 
 # Current Theme
 dir="$HOME/.config/scripts/powermenu/"
-theme='style-default'
+theme='style-5'
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
@@ -86,7 +86,7 @@ run_cmd() {
 					herbstclient quit
 					;;
 				*)
-					pkill $desktop
+					killall -p dwm
 					#loginctl kill-user $USER
 					;;
 			esac
