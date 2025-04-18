@@ -53,7 +53,7 @@ $status$snooze_timer ($num_notifications) ( + N)
 🌂 WEATHER
 💡 DWM KEYHINTS (F5)
 💡 VIM KEYHINTS (SHIFT + F5)
-🛠️ MAINTENANCE (Numpad +)
+🛠️ MAINTENANCE
 📊 MISSION CENTER (  + ESCAPE)
 🔌 POWER OPTIONS (  + X)
 💻 REDSHIFT (SHIFT + F9)
@@ -97,7 +97,7 @@ case $CHOICE in
     "💡 VIM KEYHINTS (SHIFT + F5)")
         /home/j3ll0/.config/polybar/scripts/keyhintvim.sh
         ;;
-    "🛠️ MAINTENANCE (Numpad +)")
+    "🛠️ MAINTENANCE")
         /home/j3ll0/.config/scripts/maintenance.sh
         ;;
     "🔌 POWER OPTIONS (  + X)")

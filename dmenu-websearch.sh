@@ -7,6 +7,7 @@ DMENU="dmenu -i -fn 'Dina-18' -nb $color0 -nf $color15 -sb $color1 -sf $color15 
 
 engines=("Bing"
 "Google"
+"YouTube Downloader (COPY URL FIRST!)"
 "Yahoo"
 "AUR"
 "Reddit"
@@ -50,6 +51,11 @@ case "$sel" in
 	"Google") url="https://www.google.com/search?q=";;
 	"Yahoo") url="https://search.yahoo.com/search?p=";;
 	"Amazon") url="https://www.amazon.ca/s?k=";;
+	"YouTube Downloader (COPY URL FIRST!)")
+        targeturl=$(xclip -o -selection clipboard)
+        exec kitty -e yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' -P /mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/VIDEO_DOWNLOADS/ "$targeturl"
+        exit
+        ;;
 	"AUR") url="https://aur.archlinux.org/packages?O=0&K=";;
 	"JAV QUICK (TORRENT)") url="https://javquick.com/search?q=";;
 	"24AV (TORRENT)") url="https://24av.net/en/search?keyword=";;

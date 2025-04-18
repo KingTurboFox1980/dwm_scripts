@@ -13,7 +13,7 @@ suckless="$HOME/j3ll0/.suckless/"
 declare -A friendly_names=(
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Downloads/"]="Downloads"
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/dwhelper/"]="DW Helper Downloads"
-    ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/ROFI/"]="ROFI Video Downloads"
+    ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/VIDEO_DOWNLOADS/"]="YouTube Video Downloads"
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Torrents/Complete/"]="Torrent Complete"
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Torrents/InComplete/"]="Torrent InComplete"
     ["/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/AUR/"]="AUR Downloads"
@@ -28,6 +28,7 @@ declare -A friendly_names=(
     ["smb://mycloudex2ultra/p/"]="P"
     ["/home/j3ll0/.config/polybar/scripts/icons.sh "]="Icons"
     ["/home/j3ll0/.config/polybar/scripts/themes.sh"]="Window Themes"
+    ["/home/j3ll0/.config/polybar/scripts/lightdm.sh"]="LightDM Themes"
     ["/home/j3ll0/.config/"]=".config"
     ["/home/j3ll0/.suckless/"]=".suckless"
     ["/home/j3ll0/.config/scripts/"]="SCRIPTS"
@@ -43,7 +44,7 @@ menu() {
     cat <<EOF
 📥  DOWNLOADS
 📥  DW Helper Downloads
-📥  ROFI Video Downloads
+📥  YouTube Video Downloads
 📥  Torrent Complete
 📥  Torrent InComplete
 📥  AUR Downloads
@@ -61,6 +62,7 @@ menu() {
 🎥  P
 🔐  Cursors & Icons
 🔐  Window Themes
+🔐  LightDM Themes
 🧰  .suckless
 🧰  .config
 🧰  SCRIPTS
@@ -77,7 +79,7 @@ main() {
     case "$choice" in
         "📥  DOWNLOADS") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Downloads/ ;;
         "📥  DW Helper Downloads") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/dwhelper/ ;;
-        "📥  ROFI Video Downloads") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/ROFI/ ;;
+        "📥  YouTube Video Downloads") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/VIDEO_DOWNLOADS/ ;;
         "📥  Torrent Complete") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Torrents/Complete/ ;;
         "📥  Torrent InComplete") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/Torrents/InComplete/ ;;
         "📥  AUR Downloads") folder=/mnt/4681ad39-ed76-4fe7-ab87-d3a03816a8a1/AUR/ ;;
@@ -94,6 +96,7 @@ main() {
         "🎥  P") folder=smb://mycloudex2ultra/p/ ;;
         "🔐  Cursors & Icons") folder=exec kitty -e /home/j3ll0/.config/polybar/scripts/icons.sh ;;
         "🔐  Window Themes") folder=exec kitty -e /home/j3ll0/.config/polybar/scripts/themes.sh ;;
+        "🔐  LightDM Themes") folder=exec kitty -e /home/j3ll0/.config/polybar/scripts/lightdm.sh ;;
         "🧰  .suckless") folder=/home/j3ll0/.suckless/ ;;
         "🧰  .config") folder=/home/j3ll0/.config/ ;;
         "🧰  SCRIPTS") folder=/home/j3ll0/.config/scripts/ ;;

@@ -17,10 +17,11 @@ menu() {
 BASH
 EDIT THIS MENU
 FAV PLACES
+DUNST CONFIG
 KITTY CONFIG
 PACMAN CONFIG (SUDO)
 PARU CONFIG (SUDO)
-PICOM
+PICOM (SUDO)
 Polybar Bookmarks
 D-Menu Search Engines
 STARSHIP TOML
@@ -39,10 +40,11 @@ main() {
         "BASH") file="$HOME/.bashrc" ;;
         "EDIT THIS MENU") file="/home/j3ll0/.config/scripts/dwmconfig.sh" ;;
         "FAV PLACES") file="/home/j3ll0/.config/scripts/dwmfolders.sh" ;;
+        "DUNST CONFIG") exec kitty -e sudo vim /etc/dunst/dunstrc ;;
         "KITTY CONFIG") file="/home/j3ll0/.config/kitty/kitty.conf" ;;
         "PACMAN CONFIG (SUDO)") exec kitty -e sudo vim /etc/pacman.conf ;;
         "PARU CONFIG (SUDO)") exec kitty -e sudo vim /etc/paru.conf ;;
-        "PICOM") exec kitty -e sudo vim /etc/xdg/picom.conf ;;
+        "PICOM (SUDO)") exec kitty -e sudo vim /etc/xdg/picom.conf ;;
         "Polybar Bookmarks") file="/home/j3ll0/.config/scripts/dmenu_bookmarks.txt" ;;
         "D-Menu Search Engines") file="/home/j3ll0/.config/scripts/dmenu-websearch.sh" ;;
         "STARSHIP TOML") file="/home/j3ll0/.config/starship.toml" ;;
