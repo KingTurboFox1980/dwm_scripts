@@ -6,8 +6,6 @@ https://www.icloud.com/numbers/
 https://www.workforcenow.adp.com
 
 LINUX
-https://www.bing.com/search?&q=xmonad+configs+github
-https://www.arcolinuxd.com
 https://aur.archlinux.org/
 https://asus-linux.org/guides/arch-guide/
 https://linuxhandbook.com/

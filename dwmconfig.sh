@@ -17,7 +17,7 @@ menu() {
 BASH
 EDIT THIS MENU
 FAV PLACES
-DUNST CONFIG
+DUNST CONFIG (SUDO)
 KITTY CONFIG
 PACMAN CONFIG (SUDO)
 PARU CONFIG (SUDO)
@@ -40,7 +40,7 @@ main() {
         "BASH") file="$HOME/.bashrc" ;;
         "EDIT THIS MENU") file="/home/j3ll0/.config/scripts/dwmconfig.sh" ;;
         "FAV PLACES") file="/home/j3ll0/.config/scripts/dwmfolders.sh" ;;
-        "DUNST CONFIG") exec kitty -e sudo vim /etc/dunst/dunstrc ;;
+	"DUNST CONFIG (SUDO)") exec kitty -e sudo vim /etc/dunst/dunstrc ;;
         "KITTY CONFIG") file="/home/j3ll0/.config/kitty/kitty.conf" ;;
         "PACMAN CONFIG (SUDO)") exec kitty -e sudo vim /etc/pacman.conf ;;
         "PARU CONFIG (SUDO)") exec kitty -e sudo vim /etc/paru.conf ;;
@@ -48,8 +48,8 @@ main() {
         "Polybar Bookmarks") file="/home/j3ll0/.config/scripts/dmenu_bookmarks.txt" ;;
         "D-Menu Search Engines") file="/home/j3ll0/.config/scripts/dmenu-websearch.sh" ;;
         "STARSHIP TOML") file="/home/j3ll0/.config/starship.toml" ;;
-        "VIM Keyhints") file="/home/j3ll0/.config/polybar/scripts/keyhintvim.sh" ;;
-        "DWM Keyhints") file="/home/j3ll0/.config/polybar/scripts/keyhintdwm.sh" ;;
+        "VIM Keyhints") file="/home/j3ll0/.config/scripts/polybar/keyhintvim.sh" ;;
+        "DWM Keyhints") file="/home/j3ll0/.config/scripts/polybar/keyhintdwm.sh" ;;
         "ZSH") file="$HOME/.zshrc" ;;
         *) return ;;  # Do nothing for invalid choices
     esac
